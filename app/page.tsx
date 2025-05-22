@@ -10,7 +10,7 @@ const Home = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (code === '1234') {
-      router.push('/upload');
+      window.location.href = '/upload';
     } else {
       alert('Fel kod! Försök igen.');
     }
