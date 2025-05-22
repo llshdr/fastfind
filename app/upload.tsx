@@ -22,8 +22,9 @@ const Upload = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50">
-      <h1 className="text-4xl font-bold mb-4 text-blue-800">Ladda upp din orienteringskarta</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
+      <h1 className="text-5xl font-bold mb-4">Ladda upp din orienteringskarta</h1>
+      <p className="text-xl mb-8">Välj en bild för att få AI-hjälp.</p>
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
         <input
           type="file"
@@ -31,7 +32,7 @@ const Upload = () => {
           onChange={handleFileChange}
           className="mb-4"
         />
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+        <button type="submit" className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 shadow-md">
           Ladda upp
         </button>
       </form>
