@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-// import Image from "next/image";
+import Image from 'next/image';
 
 const Home = () => {
   const [code, setCode] = useState('');
@@ -18,6 +18,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50">
+      <Image src="/logo.png" alt="FastFind Logo" width={100} height={100} className="mb-4" />
       <h1 className="text-4xl font-bold mb-4 text-blue-800">Välkommen till FastFind</h1>
       <p className="text-lg mb-6 text-gray-700">Ange din kod för att komma till AI-sidan.</p>
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
